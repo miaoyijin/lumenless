@@ -7,6 +7,8 @@ namespace App\Providers;
 use Laravel\Lumen\Http\Request;
 use infra\librarys\utils\Functions;
 use Illuminate\Support\ServiceProvider;
+use infra\contracts\ProtocolInterface;
+use infra\librarys\protocoll\RsaProtocoll;
 
 class WebServiceProvider extends ServiceProvider
 {
@@ -17,7 +19,7 @@ class WebServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //todo
+        $this->app->singleton(ProtocolInterface::class, RsaProtocoll::class);
     }
 
     /**

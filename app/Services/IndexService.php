@@ -1,8 +1,6 @@
 <?php
 
-namespace domains\home\services;
-
-use domains\BaseService;
+namespace App\Services;
 
 class IndexService extends BaseService
 {

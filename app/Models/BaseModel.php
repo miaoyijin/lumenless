@@ -1,7 +1,7 @@
 <?php
 
 
-namespace infra\models;
+namespace App\Models;
 
 use Laravel\Lumen\Application;
 use Illuminate\Database\Eloquent\Model;

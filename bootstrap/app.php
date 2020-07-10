@@ -79,7 +79,6 @@ $app->configure('dependency');
 |
 */
 $app->register(AppServiceProvider::class);
-$app->register(DomainProvider::class);
 $app->register(Illuminate\Mail\MailServiceProvider::class);
 $app->alias('mailer', Illuminate\Mail\Mailer::class);
 $app->alias('mailer', Illuminate\Contracts\Mail\Mailer::class);

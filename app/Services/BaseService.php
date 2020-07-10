@@ -3,7 +3,7 @@
  * 基础server
  */
 
-namespace domains;
+namespace App\Services;
 
 abstract class BaseService
 {
