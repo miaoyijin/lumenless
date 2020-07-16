@@ -103,4 +103,9 @@ $app->router->group(['namespace' => 'App\Http\Controllers'], function ($router) 
     require __DIR__.'/../routes/web.php';
 });
 
+$app->routeMiddleware([
+    'corsControl' => App\Http\Middleware\CorsControl::class,
+]);
+
+
 return $app;

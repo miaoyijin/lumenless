@@ -14,8 +14,13 @@
 */
 
 use Laravel\Lumen\Routing\Router;
-
-$router->group(['prefix' => '/', 'middleware' => 'beforeRequest|auth|endRequest', 'namespace' => 'Web'], function () use ($router) {
+use \Illuminate\Http\Request;
+$router->group(['prefix' => '/', 'middleware' => 'corsControl|beforeRequest|auth|endRequest', 'namespace' => 'Web'],
+    function () use($router) {
+    $router->options('{path:.*}', function (Request $request) {
+        //跨域处理
+        return [];
+    });
     $router->post('/index', 'indexController@index');
 });
 $router->post('/tools/rsapkdecode', 'Web\ToolsController@rsaPKeyDecode');
@@ -23,10 +28,10 @@ $router->post('/tools/rsaikdecode', 'Web\ToolsController@rsaiKeyDecode');
 //服务端容错路由
 $router->get('/', 'Controller@index');
 $router->post('/', 'Controller@index');
-$router->get('{path:.*}', function (\Illuminate\Http\Request $request) {
+$router->get('{path:.*}', function (Request $request) {
     return '404';
 });
-$router->post('{path:.*}', function (\Illuminate\Http\Request $request) {
+$router->post('{path:.*}', function (Request $request) {
     return '404';
 });
 //容错路由

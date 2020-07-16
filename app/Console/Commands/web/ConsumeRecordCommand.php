@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands\web;
 
-use Throwable;
 use Exception;
 use AMQPEnvelope;
 use infra\librarys\utils\Functions;

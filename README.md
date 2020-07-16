@@ -7,6 +7,8 @@ composer install --no-dev --ignore-platform-reqs -o
 ```
 composer install --no-dev -o
 ``` 
+###compose提升性能优化
+composer dumpautoload --no-dev -o
 
 ##composer安装
 curl -sS https://getcomposer.org/installer | php
