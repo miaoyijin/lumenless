@@ -68,9 +68,9 @@ return [
             'days' => 14,
         ],
         //http业务致命错误【重要】
-        'httpfailed' => [
+        'corefailed' => [
             'driver' => 'daily',
-            'path' => storage_path('logs/httpfailed.log'),
+            'path' => storage_path('logs/corefailed.log'),
             'level' => 'debug',
             'days' => 14,
         ],

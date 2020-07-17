@@ -35,11 +35,6 @@
             "infra\\": "infra/"
         }
     },
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
-    },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
