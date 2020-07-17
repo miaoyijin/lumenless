@@ -5,7 +5,7 @@ namespace  infra\Librarys\Driver;
 use Illuminate\Support\Facades\Redis as RedisConnecter;
 
 /**
- * Class Redis
+ * ∂¡–¥∑÷¿ÎRedis
  * @method static get
  * @method static mGet
  * @method static hMGet
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Redis as RedisConnecter;
  * @method static hMSet
  * @package infra\librarys\driver
  */
-class Redis{
+class RwSeparationRedis{
     //modify by self
     private static $readFunc = [
         'get',
