@@ -10,6 +10,6 @@ composer install --no-dev -o
 ###compose提升性能优化
 composer dumpautoload --no-dev -o
 
-##composer安装
+###composer安装
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
