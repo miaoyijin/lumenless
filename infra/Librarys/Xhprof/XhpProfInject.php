@@ -38,7 +38,7 @@ class XhpProfInject {
 
     public static function laodData()
     {
-        if (!env('APP_DEBUG') || EnvironmentService::isProd()) {
+        if (!env('APP_DEBUG') || Functions::isDev()) {
             return;
         }
         $dir = dirname(__FILE__);
