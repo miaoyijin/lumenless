@@ -1,5 +1,5 @@
 {
-    "name": "bussiness/proverb",
+    "name": "",
     "description": "lumenless",
     "keywords": ["framework", "laravel", "lumen", "lumenless"],
     "license": "private",
@@ -7,7 +7,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "http://packagist.2345.com/repo/private/"
+            "url": ""
         }
     ],
     "require": {
